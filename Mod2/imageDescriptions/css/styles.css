@@ -1,0 +1,10 @@
+.redBorder
+{
+    border: 1px solid red;
+}
+
+.roundedRedImg
+{
+    border: 1px solid red;
+    border-radius: 150px;
+}
