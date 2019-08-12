@@ -1,0 +1,16 @@
+.row
+{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+
+.tableDisplay
+{
+    padding: 5%;
+}
+
+#tourPrice
+{
+    display: none;
+}

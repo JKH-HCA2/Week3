@@ -7,7 +7,7 @@ function getImages()
     let imageDescriptions = ["apple", "banana", "lemon", "lime", "orange", "peach", "pear", "pineapple"]
 
     let fruit = document.querySelector("select").selectedIndex;
-    let chosenFruit = ((document.getElementsByTagName("option"))[fruit]).value;
+    let chosenFruit = document.getElementsByTagName("option")[fruit].value;
     const locationDiv = document.getElementById("locationDiv");
 
     let len = imageDescriptions.length
