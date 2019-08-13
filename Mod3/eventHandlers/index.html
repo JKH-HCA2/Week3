@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<title>Hello, world!</title>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<main>
+		<form class="info-form" id="masterForm" name="address form">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="firstName">First Name</label>
+					<input required type="text" autocomplete="off" class="form-control" id="firstName" placeholder="First Name">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="lastName">Last Name</label>
+					<input required type="text" autocomplete="off" class="form-control" id="lastName" placeholder="Last Name">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputAddress">Address</label>
+				<input required type="text" autocomplete="off" class="form-control" id="inputAddress" placeholder="1234 Main St">
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputCity">City</label>
+					<input required type="text" autocomplete="off" class="form-control" id="inputCity">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="inputState">State</label>
+					<input required type="text" autocomplete="off" class="form-control" id="inputState">
+				</div>
+				<div class="form-group col-md-2">
+					<label for="inputZip">Zip</label>
+					<input required type="number" min="0" max="99999" autocomplete="off" class="form-control" id="inputZip">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="billSelector">Billing Address is the same as Shipping Address?</label>
+					<select id="billSelector" class="custom-select">
+						<option value="Yes" selected>Yes</option>
+						<option value="No">No</option>
+					</select>
+				</div>
+			</div>
+			<div id="billForm" class="billing-address">
+				<div class="form-group">
+					<label for="billingAddress">Address</label>
+					<input type="text" autocomplete="off" class="form-control" id="billingAddress" placeholder="1234 Main St">
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="billingCity">City</label>
+						<input type="text" autocomplete="off" class="form-control" id="billingCity">
+					</div>
+					<div class="form-group col-md-4">
+						<label for="billingState">State</label>
+						<input type="text" autocomplete="off" class="form-control" id="billingState">
+					</div>
+					<div class="form-group col-md-2">
+						<label for="billingZip">Zip</label>
+						<input type="text" autocomplete="off" class="form-control" id="billingZip">
+					</div>
+				</div>
+			</div>
+			<div id="payment" class="form-row">
+				<div class="form-group col-md-6">
+					<label for="cardNum">Credit Card Number</label>
+					<input required type="number" autocomplete="off" class="form-control" id="cardNum">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="expDate">Exp Date</label>
+					<input required type="text" autocomplete="off" class="form-control" id="expDate">
+				</div>
+				<div class="form-group col-md-2">
+					<label for="secCode">Security Code</label>
+					<input required type="number" min="0" max="999" autocomplete="off" class="form-control" id="secCode">
+				</div>
+			</div>
+			<button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+		</form>
+	</main>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="scripts/events.js"></script>
+</body>
+
+</html>
